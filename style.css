@@ -3,35 +3,52 @@ body {
   font-family: Arial, sans-serif;
 }
 
+body {
+  background-color: #fffb00; /* kuning cerah */
+  font-family: Arial, sans-serif;
+}
+
+/* kartu profil */
 .kartu.profil {
-  width: 120px; /* lebih kecil dari sebelumnya */
-  padding: 15px;
-  background-color: white;
-  border-radius: 12px;
+  width: 250px;
+  margin: 80px auto;
+  padding: 25px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
   text-align: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  
-  /* posisi di pojok kiri atas */
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* bayangan lembut */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+/* efek saat hover */
+.kartu.profil:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* gambar di dalam kartu */
 .kartu.profil img {
-  width: 100px; /* kecil juga */
-  border-radius: 50%; /* jadi foto bulat */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%; /* jadi bulat */
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #ffd700; /* pinggiran keemasan */
+}
+
+/* judul */
+.kartu.profil h2 {
   margin-bottom: 10px;
+  color: #333;
 }
 
-.kartu.profil h3 {
-  font-size: 0.9rem;
-  margin: 5px 0;
-}
-
+/* teks tambahan */
 .kartu.profil p {
-  font-size: 0.75rem;
   color: #555;
+  font-size: 14px;
+  line-height: 1.4;
 }
+
 
 
 .tampilan {
