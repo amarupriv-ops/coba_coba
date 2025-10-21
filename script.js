@@ -1,3 +1,3 @@
-const tombolSapa = document.getElementById('sapaButton');
-tombolSapa.addEventListener('click', function() (
+const button = document.getElementById('button');
+button.addEventListener('click', function() (
   alert('halo');
